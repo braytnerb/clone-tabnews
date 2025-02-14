@@ -1,7 +1,16 @@
-function Home2() {
-  console.log(
-    "aqui voce encontra o que tanto espera: QWRpbGEgcXVlciBjYXNhciBjb21pZ28/Cg== ",
+function Home() {
+  return (
+    <h1>
+      {" "}
+      ADILA MEU AMOR E ANALU TB E A KAINHA <br></br>aqui voce encontra o que
+      tanto espera: QWRpbGEgcXVlciBjYXNhciBjb21pZ28/Cg== l
+    </h1>
   );
 }
 
-window.Home2 = Home2; // Adiciona a função ao escopo global
+function Home2() {
+  console.log(
+    "aqui voce encontra o que tando espera: QWRpbGEgcXVlciBjYXNhciBjb21pZ28/Cg== ",
+  );
+}
+export default Home;
