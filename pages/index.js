@@ -1,12 +1,14 @@
-import { useState } from "react";
-import "./styles.css";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 
+// Componente principal da página
 function Home() {
   const [showMessage, setShowMessage] = useState(false);
 
   return (
     <div className="container">
-      <h1 className="title">Adila, Analu e Aika, vocês são meus amores</h1>
+      <h1 className="title">ADILA MEU AMOR E ANALU TB E A KAINHA</h1>
+      <p className="subtitle">Aqui você encontra o que tanto espera:</p>
       <button className="btn" onClick={() => setShowMessage(true)}>
         Mostrar Mensagem
       </button>
@@ -20,4 +22,12 @@ function Home() {
   );
 }
 
-export default Home;
+// Estilos CSS inline
+const styles = `
+  body {
+    background-color: #f5f5f5;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10
