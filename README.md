@@ -1,1 +1,5 @@
-# clone-tabnews#Clone do https://.www.TabNews.com.br com a finalidade de exercitar as aulas do curso https://curso.dev do Filipe Deschamps.
+# landingpage
+
+Landing page / portfólio de **Bruno Santiago — Desenvolvedor Full Stack**.
+
+Site estático (`index.html` + `assets/`), publicado na Vercel.
