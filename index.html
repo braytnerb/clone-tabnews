@@ -1021,21 +1021,6 @@
     localStorage.setItem('theme', next);
   });
 
-  // External links: force open in top window (works around iframe sandbox restrictions
-  // from the preview environment, no effect when deployed standalone)
-  document.querySelectorAll('a[target="_blank"]').forEach(a => {
-    a.addEventListener('click', (e) => {
-      const url = a.getAttribute('href');
-      if (!url || url.startsWith('#')) return;
-      e.preventDefault();
-      const w = window.open(url, '_blank', 'noopener,noreferrer');
-      if (!w) {
-        // Popup blocked — fall back to top-level navigation
-        try { window.top.location.href = url; } catch (_) { window.location.href = url; }
-      }
-    });
-  });
-
   // Smooth anchor scrolling
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
